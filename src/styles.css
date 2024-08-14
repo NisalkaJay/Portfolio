@@ -1,0 +1,38 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  touch-action: pan-x pan-y
+}
+
+body {
+  margin: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  touch-action: manipulation; 
+  touch-action: pan-x pan-y
+}
+
+.content {
+  padding-top: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #124e66;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}

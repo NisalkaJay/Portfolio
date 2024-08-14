@@ -1,0 +1,23 @@
+.scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1002;
+  }
+  
+  .upArrow {
+    background-color: #ddbd66;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .upArrow svg {
+    color: #000000; 
+    width: 24px;
+    height: 24px;
+  }
+  

@@ -1,0 +1,162 @@
+.section {
+  height: 120vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background:black;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #000000, transparent);
+  z-index: 10000;
+  pointer-events: none;
+}
+
+.parallaxLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-out;
+}
+
+.backMount {
+  z-index: 1;
+}
+
+.frontMount {
+  z-index: 2;
+}
+
+.ball {
+  z-index: 3;
+  width: 10%;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-70%, 80%); 
+  height: auto;
+}
+.cone {
+  z-index: 3;
+  top: 50%; 
+  left: 50%;
+  width: 5%;
+  transform: translate(-780%, -100%); 
+  height: auto;
+}
+.rectangle {
+  z-index: 3;
+  top: 50%; 
+  left: 50%;
+  width: 5%;
+  transform: translate(700%, -150%); 
+  height: auto;
+}
+
+
+
+.textContainer {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centerText {
+  color: #ddbd66;
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0;
+  white-space: nowrap;
+  font-family: Poppins, sans-serif;
+}
+
+.tagline {
+  color: rgb(255, 255, 255);
+  font-family: Poppins, sans-serif;
+  font-size: 1.3rem;
+  margin-top: 7rem;
+  white-space: nowrap;
+}
+
+
+.name {
+  color: rgb(255, 255, 255);
+  font-family: Poppins, sans-serif;
+  font-size: 5rem;
+}
+
+@media (max-width: 700px) {
+  .centerText {
+    font-size: 3.5rem;
+    
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+
+    margin-top: 6rem;
+  }
+
+  .name{
+    font-size: 3.5rem;
+  }
+
+  .ball {
+    width: 25%;
+  }
+
+  .cone {
+    width: 8%;
+  }
+
+  .rectangle {
+    width: 8%;
+  }
+}
+
+/* Media Query for screens up to 450px */
+@media (max-width: 450px) {
+  .section{
+    height: 100vh;
+    width: 100%;
+  }
+  .centerText {
+    font-size: 2.6rem;
+  }
+
+  .tagline {
+    width: 100%; 
+    text-align: center;
+    font-size: 0.7rem;
+    margin-top: 5rem;
+  }
+
+  .name{
+    font-size: 2.6rem;
+  }
+
+  .ball {
+    width: 40%;
+  }
+
+  .cone {
+    width: 10%;
+  }
+
+  .rectangle {
+    width: 10%;
+  }
+}

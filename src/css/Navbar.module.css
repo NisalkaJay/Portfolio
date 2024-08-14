@@ -1,0 +1,208 @@
+.navbar {
+    background-color:transparent;
+    padding: 0.15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    top: 0;          
+    width: 100%;      
+    z-index: 10002;
+    box-sizing: border-box; 
+    font-family: 'poppins';
+    transition: top 0.3s ease;
+}
+
+.navList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+}
+
+.navItem {
+    margin-right: 1.5rem;
+    margin-top: 20px;
+}
+
+.navLink {
+    color: #e6e5e5;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.8rem;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    display: block;
+    padding: 0.3rem 0.6rem;
+    border-radius: 38px;
+    background-color: transparent;
+    position: relative;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); 
+}
+
+.navLink:hover {
+    color: #000; 
+    background-color: #f1eeee; 
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
+/* Update your Navbar.module.css */
+
+.navLink.active, .mobileNavLink.active {
+    color: #000; 
+    background-color: #ddbd66; 
+    transform: scale(1.05); 
+    font-weight: bold; 
+}
+
+/* Add this new rule */
+.navItem.active .navLink {
+    color: #000; 
+    background-color: #ddbd66; 
+    transform: scale(1.1); 
+    font-weight: bold; 
+}
+
+
+
+.menuIcon {
+    display: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.closeIcon {
+    display: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.navbarContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.downloadButton {
+    background-color: #000000;
+    color: #ddbd66;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    border: 3px solid #ddbd66;
+    border-radius: 38px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .downloadBtton:hover {
+    background-color: #c0a954;
+    transform: scale(1.05);
+  }
+.mobileMenu {
+    display: none;
+}
+.navList,
+.mobileNavList ul{
+    list-style-type: none; 
+}
+
+.mobileNavList {
+    position: fixed;
+    top: 50px;
+    height: fit-content; 
+    width: fit-content; 
+    background-color: rgba(221, 189, 102, 0.502);
+    backdrop-filter: blur(20px);
+    padding: 0.6rem;
+    box-shadow: -10px 0 12px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 1001;
+    border-radius: 12px;
+    right: -100%;
+}
+
+.mobileNavList.show {
+    right: 12px;
+}
+
+.mobileNavItem {
+    margin-bottom: 0.5rem;
+    margin-left: -20px;
+    margin-right: 10px;
+}
+
+.mobileNavLink {
+
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: 0.2rem 0;
+}
+
+@media (max-width: 1100px) {
+    .navList {
+        display: none;
+    }
+
+    .menuIcon, .closeIcon {
+        display: block;
+    }
+
+    .mobileMenu {
+        display: block;
+    }
+
+    .mobileNavList {
+        display: none;
+    }
+
+    .mobileNavList.show {
+        display: block;
+    }
+
+    .navbar {
+        min-height: 50px;
+        font-size: 5px; 
+    }
+
+    .navbarContent {
+        padding-right: 40px; 
+    }
+    .logoImg {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 460px) {
+    .navbar {
+        height: 60px;
+       
+    }
+
+    .navbarContent {
+        padding-right: 40px; 
+    }
+    .logoImg {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+}
