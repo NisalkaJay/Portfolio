@@ -30,7 +30,7 @@
   .connectText {
 
     font-weight: bold;
-    color: #ffffff;
+    color: #ddbd66;
     position: absolute; 
     top: 16%; 
     left: 50%; 
@@ -38,12 +38,12 @@
     z-index: 10; 
     margin-bottom: 30px; 
     font-family: poppins;
-    border-color: #ddbd66;
+    border-color: #000000;
     font-size: 48px;
     text-shadow: 
-        1px 1px 0 #ddbd66, 
+        1px 1px 0 #ffffff, 
         -1px -1px 0 #000000, 
-        1px -1px 0 #ddbd66, 
+        1px -1px 0 #ffffff, 
         -1px 1px 0 #000000;
 
 }
@@ -90,6 +90,7 @@
     left: 100px;
     width: 300px;
     text-align: left;
+    font-weight: bold;
     color: #ffffff;
     transform: translateY(-50%);
     font-family: system-ui;
