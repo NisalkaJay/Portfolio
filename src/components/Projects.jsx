@@ -74,13 +74,13 @@ const Projects = () => {
         <button className={styles.projectsPrev} ref={prevRef}>
           {/* Example SVG for left arrow */}
           <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15 19l-7-7 7-7" stroke="#000000" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M15 19l-7-7 7-7" stroke="#ddbd66" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </button>
         <button className={styles.projectsNext} ref={nextRef}>
           {/* Example SVG for right arrow */}
           <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 5l7 7-7 7" stroke="#000000" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M9 5l7 7-7 7" stroke="#ddbd66" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </button>
       </div>
