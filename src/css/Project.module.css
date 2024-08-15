@@ -38,13 +38,7 @@
     z-index: 10; 
     margin-bottom: 30px; 
     font-family: poppins;
-    border-color: #000000;
     font-size: 48px;
-    text-shadow: 
-        1px 1px 0 #ffffff, 
-        -1px -1px 0 #000000, 
-        1px -1px 0 #ffffff, 
-        -1px 1px 0 #000000;
 
 }
   
