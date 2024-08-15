@@ -106,6 +106,9 @@ const Contact = () => {
           <a href="https://wa.me/94768095818"><FaWhatsapp /></a>
         </li>
       </div>
+      <div className={styles.copyright}>
+        &copy; {new Date().getFullYear()} Nisalka. All rights reserved.
+      </div>
     </div>
   );
 };
