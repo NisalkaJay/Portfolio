@@ -4,7 +4,7 @@ import styles from '../css/tech.module.css';
 import figma from '../assets/Figma_.png';
 import react from '../assets/React_.png';
 import css from '../assets/Css3_.png';
-import javascript from '../assets/Javascript_.png';
+import javascript from '../assets/javascript_.png';
 import html from '../assets/Html5_.png';
 import github from '../assets/Github_.png';
 import blender from '../assets/blender.png';
