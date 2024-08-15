@@ -91,7 +91,6 @@
     width: 300px;
     text-align: left;
     font-weight: bold;
-    border: 2px solid black;
     color: #ffffff;
     transform: translateY(-50%);
     font-family: system-ui;
@@ -106,6 +105,7 @@
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
+    border: 2px solid black;
     opacity: 0;
     animation: animate 1s ease-in-out 1 forwards;
   }
@@ -113,6 +113,7 @@
   .projectsSliderDescription {
     margin-top: 10px;
     margin-bottom: 20px;
+    border: 2px solid black;
     opacity: 0;
     animation: animate 1s ease-in-out 0.3s 1 forwards;
   }
