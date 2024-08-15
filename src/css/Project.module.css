@@ -105,7 +105,11 @@
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
-    border: 2px solid black;
+    text-shadow: 
+      2px 2px 0 black,
+      -2px -2px 0 black,
+      2px -2px 0 black,
+      -2px 2px 0 black;
     opacity: 0;
     animation: animate 1s ease-in-out 1 forwards;
   }
@@ -113,7 +117,11 @@
   .projectsSliderDescription {
     margin-top: 10px;
     margin-bottom: 20px;
-    border: 2px solid black;
+    text-shadow: 
+      2px 2px 0 black,
+      -2px -2px 0 black,
+      2px -2px 0 black,
+      -2px 2px 0 black;
     opacity: 0;
     animation: animate 1s ease-in-out 0.3s 1 forwards;
   }
