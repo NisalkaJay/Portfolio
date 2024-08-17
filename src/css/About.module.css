@@ -219,7 +219,7 @@
   /* Responsive styles for 450px */
   @media (max-width: 500px) {
     .section {
-      height: 230vh;
+      height: 210vh;
     }
     .heading {
       font-size: 2rem;
@@ -249,7 +249,7 @@
   }
   @media (max-width:450px) {
     .section {
-      height: 210vh;
+      height: 230vh;
     }
   }
   
