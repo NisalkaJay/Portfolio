@@ -5,28 +5,44 @@ import styles from '../css/Contact.module.css';
 
 const Contact = () => {
   const form = useRef();
-  const [popupMessage, setPopupMessage] = useState('');
-  const [showPopup, setShowPopup] = useState(false);
   const [menuActive, setMenuActive] = useState(false);
+  const [menuInView, setMenuInView] = useState(false);
 
   useEffect(() => {
     const toggleBtn = document.querySelector(`.${styles.menuToggle}`);
     const menu = document.querySelector(`.${styles.menu}`);
+    const menuSection = document.querySelector(`.${styles.section}`);
 
     const handleToggle = () => {
-      setMenuActive(!menuActive);
+      setMenuActive((prev) => !prev);
+    };
+
+    const handleScroll = () => {
+      const rect = menuSection.getBoundingClientRect();
+      setMenuInView(rect.top < window.innerHeight && rect.bottom >= 0);
     };
 
     if (toggleBtn && menu) {
       toggleBtn.addEventListener("click", handleToggle);
+      window.addEventListener("scroll", handleScroll);
     }
 
     return () => {
       if (toggleBtn) {
         toggleBtn.removeEventListener("click", handleToggle);
       }
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [menuActive]);
+
+  useEffect(() => {
+    const menu = document.querySelector(`.${styles.menu}`);
+    if (menuInView && !menuActive) {
+      menu.classList.add(styles.animate);
+    } else {
+      menu.classList.remove(styles.animate);
+    }
+  }, [menuInView, menuActive]);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -50,8 +66,6 @@ const Contact = () => {
       .finally(() => {
         e.target.reset();
       });
-
-    e.target.reset();
   };
 
   return (
@@ -72,12 +86,6 @@ const Contact = () => {
         </div>
         <button type="submit">Send</button>
       </form>
-
-      {showPopup && (
-        <div className={styles.popup}>
-          {popupMessage}
-        </div>
-      )}
 
       <div className={`${styles.menu} ${menuActive ? styles.active : ''}`}>
         <div className={styles.menuToggle}><FaPlus /></div>
