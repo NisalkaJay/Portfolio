@@ -219,7 +219,7 @@
   /* Responsive styles for 450px */
   @media (max-width: 500px) {
     .section {
-      height: 210vh;
+      height: 230vh;
     }
     .heading {
       font-size: 2rem;
@@ -245,6 +245,11 @@
     .roleImage {
       width: 60px;
       height: 60px;
+    }
+  }
+  @media (max-width:450px) {
+    .section {
+      height: 210vh;
     }
   }
   
