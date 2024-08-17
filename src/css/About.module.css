@@ -5,7 +5,7 @@
     padding: 50px 20px;
     background-color: #000;
     color: #fff;
-    min-height: 190vh;
+    min-height: 170vh;
     position: relative;
   }
   
@@ -217,9 +217,9 @@
   }
   
   /* Responsive styles for 450px */
-  @media (max-width: 450px) {
+  @media (max-width: 500px) {
     .section {
-      height: 210vh;
+      height: 230vh;
     }
     .heading {
       font-size: 2rem;
