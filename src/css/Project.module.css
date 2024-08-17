@@ -207,7 +207,7 @@
       }
       
       .projectsSliderItem:nth-child(4) {
-        left: calc(50% + 220px);
+        left: calc(50% + 250px);
       }
 
       .projectsSliderContent{
