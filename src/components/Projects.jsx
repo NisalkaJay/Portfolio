@@ -44,28 +44,28 @@ const Projects = () => {
           <div className={styles.projectsSliderContent}>
             <div className={styles.projectsSliderName}>project 1</div>
             <div className={styles.projectsSliderDescription}></div>
-            <button className={styles.projectsSliderButton}>See More</button>
+            <button className={styles.projectsSliderButton}>Git Hub</button>
           </div>
         </div>
         <div className={styles.projectsSliderItem} style={{ backgroundImage: `url(${img4})` }}>
           <div className={styles.projectsSliderContent}>
             <div className={styles.projectsSliderName}>project 2</div>
             <div className={styles.projectsSliderDescription}></div>
-            <button className={styles.projectsSliderButton}>See More</button>
+            <button className={styles.projectsSliderButton}>Git Hub</button>
           </div>
         </div>
         <div className={styles.projectsSliderItem} style={{ backgroundImage: `url(${img4})` }}>
           <div className={styles.projectsSliderContent}>
             <div className={styles.projectsSliderName}>project 3</div>
             <div className={styles.projectsSliderDescription}></div>
-            <button className={styles.projectsSliderButton}>See More</button>
+            <button className={styles.projectsSliderButton}>Git Hub</button>
           </div>
         </div>
         <div className={styles.projectsSliderItem} style={{ backgroundImage: `url(${img4})` }}>
           <div className={styles.projectsSliderContent}>
             <div className={styles.projectsSliderName}>project 4</div>
             <div className={styles.projectsSliderDescription}></div>
-            <button className={styles.projectsSliderButton}>See More</button>
+            <button className={styles.projectsSliderButton}>Git Hub</button>
           </div>
         </div>
       </div>

@@ -114,7 +114,7 @@
 }
 
 
-@media (max-width: 480px){
+@media (max-width: 500px){
     .section{
         height: 90vh;
     }

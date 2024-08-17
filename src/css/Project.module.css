@@ -181,7 +181,7 @@
       filter: blur(0);
     }
   }
-  @media (max-width: 420px){
+  @media (max-width: 500px){
 
     .projectsSection{
       width: 100%;
