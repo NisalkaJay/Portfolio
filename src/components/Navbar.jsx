@@ -55,7 +55,7 @@ const Navbar = () => {
   const downloadCV = () => {
     const link = document.createElement('a');
     link.href = MyCV; 
-    link.download = 'Nisalka_jayasinghe_CV.pdf';
+    link.download = 'Resume_Nisalka_jayasinghe.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
