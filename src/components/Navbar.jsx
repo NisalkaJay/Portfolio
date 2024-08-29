@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from '../css/Navbar.module.css';
 import menuIcon from '../assets/menu.svg';
 import closeIcon from '../assets/close.svg';
-import MyCV from '../files/Nisalka_jayasinghe_CV.pdf'
+import MyCV from '../files/Resume_Nisalka_jayasinghe.pdf'
 
 const navLinks = [
   { id: 'home', title: 'Home' },
